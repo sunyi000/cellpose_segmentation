@@ -61,7 +61,10 @@ def main(inputs, img_path, img_format, output_dir):
                           masks.astype(np.uint16))
 
     # make segmentation show #
-    if params['show_segmentation']:
+    # show 3d not working thus set show_seg always to false
+    #show_seg = params['show_segmentation']
+    show_seg = False
+    if show_seg:
         img = skimage.io.imread(img_path)
         # uniform image
         if img_format.endswith('tiff') and params['channel_first']:

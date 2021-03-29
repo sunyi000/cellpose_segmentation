@@ -62,7 +62,7 @@
             <param argument="cellprob_threshold" type="float" value="0." help="Cell probability threshold (all pixels with prob above threshold kept for masks)"/>
             <param argument="rescale" type="float" value="" optional="true" help="If diameter is set to None, and rescale is not None, then rescale is used instead of diameter for resizing image"/>
          </section>
-         <param name="show_segmentation" type="boolean" truevalue="booltrue" falsevalue="boolfalse" checked="true" label="Whether to show segmentation?"/>
+         <!--param name="show_segmentation" type="boolean" truevalue="booltrue" falsevalue="boolfalse" checked="true" label="Whether to show segmentation?"/-->
          <param name="use_gpu" type="boolean" truevalue="booltrue" falsevalue="boolfalse" checked="false" label="Whether to use GPU?" />
     </inputs>
     <outputs>
