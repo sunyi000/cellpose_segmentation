@@ -7,7 +7,7 @@
         <requirement type="package" version="0.6">cellpose</requirement>
         <requirement type="package" version="4.5.1.48">opencv-python-headless</requirement>
         <!--requirement type="package" version="1.6.0">mxnet-mkl</requirement-->
-        <!--requirement type="package" version="1.7.1">pytorch</requirement-->
+        <!requirement type="package" version="1.7.1">pytorch</requirement>
         <requirement type="package" version="0.17.2">scikit-image</requirement>
         <requirement type="package" version="3.3.3">matplotlib</requirement>
         <!--requirement type="package" version="10.2">cudatoolkit</requirement>
@@ -67,9 +67,9 @@
     </inputs>
     <outputs>
         <data format="tiff" name="cp_mask" from_work_dir="segmentation/cp_masks.tif" label="Cellpose ${model_selector.model_type} masks on ${on_string}"/>
-        <data format="png" name="cp_segm" from_work_dir="segmentation/segm_show.png" label="Segmentation Show on ${on_string}">
+        <!--data format="png" name="cp_segm" from_work_dir="segmentation/segm_show.png" label="Segmentation Show on ${on_string}">
             <filter>show_segmentation</filter>
-        </data>
+        </data-->
     </outputs>
     <tests>
         <test>
